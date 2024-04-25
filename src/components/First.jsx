@@ -1,4 +1,4 @@
-import first from '/first.png'
+import first from '/img/first.png'
 
 const First = () => {
   return (

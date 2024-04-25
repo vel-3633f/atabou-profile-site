@@ -1,4 +1,5 @@
-import footer from "/footer.png";
+import footer from "/img/footer.png";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Footer = () => {
   return (
@@ -15,10 +16,22 @@ const Footer = () => {
           />
         </div>
         <div className="flex justify-center w-[1920px] h-[100px]">
-          <p className="mr-20" style={Styles.fontSize23}>
+          <AnchorLink
+            href="#about1"
+            offset="100"
+            className="mr-[70px]"
+            style={Styles.fontSize23}
+          >
             about
-          </p>
-          <p style={Styles.fontSize23}>member & works</p>
+          </AnchorLink>
+          <AnchorLink
+            href="#member1"
+            offset="80"
+            className="mr-[70px]"
+            style={Styles.fontSize23}
+          >
+            member & works
+          </AnchorLink>
         </div>
       </div>
     </div>
