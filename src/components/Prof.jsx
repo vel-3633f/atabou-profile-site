@@ -1,5 +1,5 @@
 import Slider from "./Slider";
-import prof from "/prof.png";
+import prof from "/img/prof.png";
 
 const Prof = () => {
   return (
