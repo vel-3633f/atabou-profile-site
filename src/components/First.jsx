@@ -1,24 +1,29 @@
-import first from '/img/first.png'
+import backImg from "/img/materialImg/1/backImg.png";
+import bucket from "/img/materialImg/1/bucket.png";
+import compass from "/img/materialImg/1/compass.png";
+import major from "/img/materialImg/1/major.png";
+import nail from "/img/materialImg/1/nail.png";
+import palette from "/img/materialImg/1/palette.png";
+import scissors from "/img/materialImg/1/scissors.png";
+import scoop from "/img/materialImg/1/scoop.png";
+import thread from "/img/materialImg/1/thread.png";
+import titleLogo from "/img/materialImg/1/titleLogo.png";
 
 const First = () => {
   return (
-    <div className='relative'>
-      <img src={first} alt="first" className="w-[1725px] h-[940px] rounded-t-[470px]"/>
-      <div className='absolute top-[45%] text-white left-32'>
-        <p style={Styles.fontSize50}>あたりまえ工房</p>
-        <p style={Styles.fontSize50}>ポートフォリオ</p>
-      </div>
+    <div className="relative w-[1725px] h-[975px]">
+      <img src={backImg} alt="backImg" className="absolute top-0 z-0" />
+      <img src={nail} alt="nail" className="absolute top-0" />
+      <img src={thread} alt="thread" className="absolute top-0" />
+      <img src={compass} alt="compass" className="absolute top-0" />
+      <img src={major} alt="major" className="absolute top-0" />
+      <img src={palette} alt="palette" className="absolute top-0" />
+      <img src={scissors} alt="scissors" className="absolute top-0" />
+      <img src={scoop} alt="scoop" className="absolute top-0" />
+      <img src={titleLogo} alt="titleLogo" className="absolute top-0" />
+      <img src={bucket} alt="bucket" className="absolute top-0" />
     </div>
-  )
+  );
 };
-
-const Styles = {
-  fontSize50:{
-    fontSize: "50px",
-    fontFamily: "Noto Sans Japanese"
-  }
-}
-
-
 
 export default First;

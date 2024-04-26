@@ -1,5 +1,5 @@
-import logo from "/img/logo.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import logo from "/img/materialImg/logo.png"
 
 const Header = () => {
   return (
