@@ -18,8 +18,10 @@ const About = () => {
           あたりまえ工房とは?
         </p>
         <div className="mt-[90px]" style={Styles.fontSize18}>
-          {aboutSentence.map((value) => (
-            <p className="mb-[25px]">{value}</p>
+          {aboutSentence.map((value, index) => (
+            <p className="mb-[25px]" key={index}>
+              {value}
+            </p>
           ))}
         </div>
       </div>
