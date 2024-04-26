@@ -1,32 +1,32 @@
 import { aboutSentence } from "../consts/sentense";
-import about from "/img/about.png";
+import abouBeside from "/img/materialImg/aboutBeside.png";
+import aboutUnder from "/img/materialImg/aboutUnder.png";
 
 const About = () => {
   return (
-    <div className="flex justify-between w-[1725px] mt-[200px]">
-      <div>
-        <p className="mt-[110px]" style={Styles.fontSize24} id="about1">
-          about・・・
-        </p>
-        <p className="mt-5" style={Styles.fontSize36}>
-          あたりまえ工房とは?
-        </p>
-        <div className="mt-[90px]" style={Styles.fontSize18}>
-          {aboutSentence.map((value, index) => (
-            <p className="mb-[25px]" key={index}>
-              {value}
-            </p>
-          ))}
+    <section className="w-full ">
+      <div className="flex justify-between w-[1625px] mt-[200px] mx-auto">
+        <div>
+          <p className="mt-[110px]" style={Styles.fontSize24} id="about1">
+            about・・・
+          </p>
+          <p className="mt-5" style={Styles.fontSize36}>
+            あたりまえ工房とは?
+          </p>
+          <div className="mt-[90px]" style={Styles.fontSize24}>
+            {aboutSentence.map((value, index) => (
+              <p className="leading-[70px] tracking-wider" key={index}>
+                {value}
+              </p>
+            ))}
+          </div>
+        </div>
+        <div>
+          <img src={abouBeside} alt="about" />
         </div>
       </div>
-      <div>
-        <img
-          src={about}
-          alt="about"
-          className="w-[960px] h-[810px] rounded-[60px]"
-        />
-      </div>
-    </div>
+      <img src={aboutUnder} alt="abourUnder" />
+    </section>
   );
 };
 
