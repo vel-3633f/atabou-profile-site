@@ -1,28 +1,30 @@
 import Slider from "./Slider";
-import prof from "/img/prof.png";
 
 const Prof = () => {
   return (
-    <div>
-      <div className="relative ml-[200px] mt-[60px]">
-        <img
-          src={prof}
-          alt="prof"
-          className="w-[460px] h-[460px] rounded-full"
-        />
-        <div className="absolute top-[50px] -left-[50px]">
-          <p style={Styles.fontSize21}>色々な切り口から！</p>
-          <p className="mt-5" style={Styles.fontSize30}>
-            はさみさん
-          </p>
-        </div>
-        <p className="mt-7" style={Styles.fontSize12}>
-          ぴよです。
-        </p>
-        <div className="mt-10">
-          <Slider />
+    <div className="flex flex-col items-center w-[600px] ml-24">
+      <div className="mt-[60px] h-[480px]">
+        <div className="bg-primary rounded-full relative w-[460px] h-[460px]">
+          <img
+            src="/img/materialImg/2/majorSolo.png"
+            alt="prof"
+            className="absolute top-0 left-24"
+          />
+          <div className="absolute top-[50px] -left-[50px]">
+            <p style={Styles.fontSize21}>伸びる伸びる、常に成長!</p>
+            <p className="mt-5" style={Styles.fontSize30}>
+              メジャーくん
+            </p>
+          </div>
         </div>
       </div>
+      <p style={Styles.fontSize20}>
+        エンジニアとして一流になりたい。
+        <br />
+        学習が日課です。
+      </p>
+
+      <Slider />
     </div>
   );
 };
@@ -48,8 +50,8 @@ const Styles = {
     fontFamily: "Noto Sans Japanese",
   },
 
-  fontSize12: {
-    fontSize: "12px",
+  fontSize20: {
+    fontSize: "20px",
     fontFamily: "Noto Sans Japanese",
   },
 };
