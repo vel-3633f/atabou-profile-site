@@ -1,5 +1,3 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -13,17 +11,17 @@ import { Navigation } from "swiper/modules";
 
 export default function Slider() {
   return (
-    <div className="h-[427.5px] w-[570px] mt-[100px] border ">
+    <div className="h-[427px] w-[570px] mt-[100px]">
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <img src="../../public/img/thumbnailimg/fujii1.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="../../public/img/thumbnailimg/fujii2.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="../../public/img/thumbnailimg/fujii3.png" alt="" />
+        </SwiperSlide>
       </Swiper>
     </div>
   );
