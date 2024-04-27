@@ -21,10 +21,7 @@ export default function Slider({ images, id }) {
       >
         {images.map((image, i) => (
           <SwiperSlide key={i}>
-            <img
-              src={`../../public/img/thumbnailimg/${image}.png`}
-              alt={image}
-            />
+            <img src={`/img/thumbnailimg/${image}.png`} alt={image} />
           </SwiperSlide>
         ))}
       </Swiper>
