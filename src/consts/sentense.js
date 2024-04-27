@@ -17,3 +17,100 @@ export const firstName = [
   "scoop",
   "titleLogo",
 ];
+
+export const membersDetail = [
+  {
+    id: 1,
+    catchCopy: "伸びる伸びる、常に成長!",
+    name: "メジャーくん",
+    text: ["エンジニアとして一流になりたい。", "学習が日課です。"],
+    imageName: "major",
+    images: ["fujii1", "fujii2", "fujii3"],
+  },
+  {
+    id: 2,
+    catchCopy: "情報分野と芸術分野、両視点から繋ぐ!",
+    name: "ネジさん",
+    text: [
+      "学生時代に学んだ情報分野と芸術分野、",
+      "双方を活かしていきたいです。",
+    ],
+    imageName: "nail",
+    images: ["sakaki1", "sakaki2", "sakaki3"],
+  },
+  {
+    id: 3,
+    catchCopy: "クリエイターとクライアントを繋ぐ",
+    name: "糸さん",
+    text: ["クライアントとの架け橋に", "なれるようがんばります！"],
+    imageName: "thread",
+    images: ["suzuki1", "suzuki2"],
+  },
+  {
+    id: 4,
+    catchCopy: "様々な色に染まって、成長!",
+    name: "パレットくん",
+    text: ["エンジニアとして一流になりたい。", "学習が日課です。"],
+    imageName: "palette",
+    images: ["kitamura1", "kitamura2", "kitamura3"],
+  },
+  {
+    id: 5,
+    catchCopy: "意見を拾う、情報収集が武器",
+    name: "バケツくん",
+    text: ["エンジニアとして一流になりたい。", "学習が日課です。"],
+    imageName: "bucket",
+    images: ["fujinawa1", "fujinawa2", "fujinawa3"],
+  },
+  {
+    id: 6,
+    catchCopy: "狭義と広義、二つの軸を持つ!",
+    name: "コンパスさん",
+    text: ["エンジニアとして一流になりたい。", "学習が日課です。"],
+    imageName: "compass",
+    images: ["osanai1", "osanai2", "osanai3", "osanai4", "osanai5", "osanai6"],
+  },
+  {
+    id: 7,
+    catchCopy: "様々な媒体、色々な切り口から!",
+    name: "はさみさん",
+    text: ["エンジニアとして一流になりたい。", "学習が日課です。"],
+    imageName: "scissors",
+    images: ["takahashi1", "takahashi2", "takahashi3"],
+  },
+  {
+    id: 8,
+    catchCopy: "情報分野と芸術分野、両視点から繋ぐ!",
+    name: "スコップくん",
+    text: ["エンジニアとして一流になりたい。", "学習が日課です。"],
+    imageName: "scoop",
+    images: ["abe1", "abe2"],
+  },
+];
+
+export const Styles = {
+  fontSize24: {
+    fontSize: "24px",
+    fontFamily: "Karla",
+  },
+
+  fontSize36: {
+    fontSize: "36px",
+    fontFamily: "Noto Sans Japanese",
+  },
+
+  fontSize21: {
+    fontSize: "21px",
+    fontFamily: "Noto Sans Japanese",
+  },
+
+  fontSize30: {
+    fontSize: "30px",
+    fontFamily: "Noto Sans Japanese",
+  },
+
+  fontSize20: {
+    fontSize: "20px",
+    fontFamily: "Noto Sans Japanese",
+  },
+};

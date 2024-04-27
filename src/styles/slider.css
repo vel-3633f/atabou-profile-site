@@ -3,24 +3,6 @@
   height: 100%;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* 前へ次への矢印カスタマイズ */
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -35,17 +17,14 @@
 /* 前への矢印カスタマイズ */
 .swiper-button-prev::after {
   border-bottom: 20px solid transparent;
-  border-right: 30px solid #ff4500;
+  border-right: 30px solid #e4e4e4;
   border-top: 20px solid transparent;
+  left: -60px;
 }
 /* 次への矢印カスタマイズ */
 .swiper-button-next::after {
   border-bottom: 20px solid transparent;
-  border-left: 30px solid #ff4500;
+  border-left: 30px solid #e4e4e4;
   border-top: 20px solid transparent;
-}
-/* 画像サイズ調整 */
-.swiper-slide img {
-  height: auto;
-  width: 100%;
+  right: -60px;
 }
