@@ -1,3 +1,4 @@
+import { membersDetail } from "../consts/sentense";
 import Prof from "./Prof";
 
 const Member = () => {
@@ -11,7 +12,11 @@ const Member = () => {
           こんなもの作ります
         </p>
       </div>
-      <Prof />
+      <div className="grid grid-cols-2 mx-auto gap-y-12">
+        {membersDetail.map((member) => (
+          <Prof key={member.id} member={member} />
+        ))}
+      </div>
     </div>
   );
 };
