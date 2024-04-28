@@ -1,11 +1,11 @@
-import { membersDetail } from "../consts/sentense";
+import { Styles, membersDetail } from "../consts/sentense";
 import Prof from "./Prof";
 
 const Member = () => {
   return (
     <div>
-      <div className="w-[1725px] mt-[300px]">
-        <p style={Styles.fontSize24} id="member1">
+      <div className="flex flex-col sm:flex-row w-[1725px] mt-[300px]">
+        <p className="font-JPN text-2xl" id="member1">
           member & works・・・
         </p>
         <p className="mt-5" style={Styles.fontSize36}>
@@ -19,33 +19,6 @@ const Member = () => {
       </div>
     </div>
   );
-};
-
-const Styles = {
-  fontSize24: {
-    fontSize: "24px",
-    fontFamily: "Karla",
-  },
-
-  fontSize36: {
-    fontSize: "36px",
-    fontFamily: "Noto Sans Japanese",
-  },
-
-  fontSize21: {
-    fontSize: "21px",
-    fontFamily: "Noto Sans Japanese",
-  },
-
-  fontSize30: {
-    fontSize: "30px",
-    fontFamily: "Noto Sans Japanese",
-  },
-
-  fontSize12: {
-    fontSize: "12px",
-    fontFamily: "Noto Sans Japanese",
-  },
 };
 
 export default Member;

@@ -6,7 +6,12 @@ export default {
       colors: {
         primary: "#F9EDDC",
         secondary: "#e4e4e4",
+        moji: "#443936",
       },
+    },
+    fontFamily: {
+      JPN: ["Noto Sans Japanese"],
+      ENG: ["Karla"],
     },
   },
   plugins: [],
