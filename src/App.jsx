@@ -23,8 +23,8 @@ function App() {
           <Header />
           <First />
           <About />
-          {/* <Member /> */}
-          {/* <Footer /> */}
+          <Member />
+          <Footer />
         </>
       )}
     </div>
