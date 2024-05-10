@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex justify-center items-center flex-col  text-moji">
       {isLoading ? (
         <Loading />
       ) : (
@@ -23,8 +23,8 @@ function App() {
           <Header />
           <First />
           <About />
-          <Member />
-          <Footer />
+          {/* <Member /> */}
+          {/* <Footer /> */}
         </>
       )}
     </div>

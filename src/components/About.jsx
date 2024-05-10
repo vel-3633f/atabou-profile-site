@@ -1,19 +1,22 @@
-import { aboutSentence } from "../consts/sentense";
+import { Styles, aboutSentence } from "../consts/sentense";
 import abouBeside from "/img/materialImg/aboutBeside.png";
 import aboutUnder from "/img/materialImg/aboutUnder.png";
 
 const About = () => {
   return (
-    <section className="w-full ">
-      <div className="flex justify-between w-[1625px] mt-[200px] mx-auto">
+    <section className="w-full h-full">
+      <div className="flex flex-col lg:flex-row justify-between w-[80%] mx-auto mt-[30px]">
         <div>
-          <p className="mt-[110px]" style={Styles.fontSize24} id="about1">
+          <p
+            className="mt-[110px] font-ENG text-xs sm:text-sm md:text-xl lg:text-2xl"
+            id="about1"
+          >
             about・・・
           </p>
-          <p className="mt-5" style={Styles.fontSize36}>
+          <p className="mt-5 font-JPN text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
             あたりまえ工房とは?
           </p>
-          <div className="mt-[90px]" style={Styles.fontSize24}>
+          <div className="mt-[90px] font-JPN text-xs sm:text-sm md:text-xl lg:text-2xl text-center lg:text-left">
             {aboutSentence.map((value, index) => (
               <p className="leading-[70px] tracking-wider" key={index}>
                 {value}
@@ -28,23 +31,6 @@ const About = () => {
       <img src={aboutUnder} alt="abourUnder" />
     </section>
   );
-};
-
-const Styles = {
-  fontSize24: {
-    fontSize: "24px",
-    fontFamily: "Karla",
-  },
-
-  fontSize36: {
-    fontSize: "36px",
-    fontFamily: "Noto Sans Japanese",
-  },
-
-  fontSize18: {
-    fontSize: "18px",
-    fontFamily: "Noto Sans Japanese",
-  },
 };
 
 export default About;

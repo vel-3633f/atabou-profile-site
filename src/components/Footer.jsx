@@ -1,4 +1,5 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Styles } from "../consts/sentense";
 
 const Footer = () => {
   return (
@@ -34,13 +35,6 @@ const Footer = () => {
       </div>
     </div>
   );
-};
-
-const Styles = {
-  fontSize23: {
-    fontSize: "23px",
-    fontFamily: "Karla",
-  },
 };
 
 export default Footer;
