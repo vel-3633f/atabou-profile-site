@@ -4,7 +4,7 @@ import Prof from "./Prof";
 const Member = () => {
   return (
     <div>
-      <div className="flex flex-col sm:flex-row w-[1725px] mt-[300px]">
+      <div className="flex flex-col w-full mt-[300px] mb-[100px]">
         <p className="font-JPN text-2xl" id="member1">
           member & works・・・
         </p>
@@ -12,7 +12,7 @@ const Member = () => {
           こんなもの作ります
         </p>
       </div>
-      <div className="grid grid-cols-2 mx-auto gap-y-12">
+      <div className="grid grid-cols-1 xl:grid-cols-2 mx-auto gap-y-[300px]">
         {membersDetail.map((member) => (
           <Prof key={member.id} member={member} />
         ))}

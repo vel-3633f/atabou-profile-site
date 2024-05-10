@@ -6,20 +6,20 @@ const Footer = () => {
     <div>
       <div className="mt-[400px] mb-[300px]">
         <img
-          className="w-[1920px] h-[600px]"
+          className="w-full"
           src="/img/materialImg/footerUnder.png"
           alt="footer"
         />
       </div>
-      <div className="w-[1920px] h-[400px] bg-gray-400">
-        <div className="flex justify-center w-[1920px] h-[240px]">
+      <div className="w-full h-[400px] bg-gray-400">
+        <div className="flex justify-center w-full h-[240px]">
           <img
             className="items-center justify-center mt-[60px]"
             src="/img/materialImg/footerLogo.png"
             alt="footer"
           />
         </div>
-        <div className="flex justify-center w-[1920px] h-[100px]">
+        <div className="flex justify-center w-full h-[100px]">
           <AnchorLink
             href="#about1"
             offset="100"

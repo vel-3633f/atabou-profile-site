@@ -10,7 +10,7 @@ import { Navigation } from "swiper/modules";
 export default function Slider({ images, id }) {
   console.log(images);
   return (
-    <div className="relative h-[427px] w-[570px] mt-[100px]">
+    <div className="relative h-[427px] w-[570px] mt-[50px]">
       <Swiper
         modules={[Navigation]}
         className="mySwiper"
@@ -22,10 +22,7 @@ export default function Slider({ images, id }) {
       >
         {images.map((image, i) => (
           <SwiperSlide key={i}>
-            <img
-              src={`/img/thumbnailImg/${image}.png`}
-              alt={image}
-            />
+            <img src={`/img/thumbnailImg/${image}.png`} alt={image} />
           </SwiperSlide>
         ))}
       </Swiper>
