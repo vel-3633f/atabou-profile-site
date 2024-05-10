@@ -13,14 +13,16 @@ const Prof = ({ member }) => {
             className={`absolute ${memberImageStyle}`}
           />
           <div>
-            <p style={Styles.fontSize21}>{member.catchCopy}</p>
-            <p className="mt-5" style={Styles.fontSize30}>
+            <p className="font-JPN text-xs sm:text-sm md:text-xl lg:text-2xl">
+              {member.catchCopy}
+            </p>
+            <p className="mt-5 font-JPN text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
               {member.name}
             </p>
           </div>
         </div>
       </div>
-      <p style={Styles.fontSize20} className="text-left">
+      <p className="text-left font-JPN text-xs sm:text-sm md:text-xl lg:text-2xl">
         {member.text.map((val, i) => (
           <span key={i}>
             {val}
