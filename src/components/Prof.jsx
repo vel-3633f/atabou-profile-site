@@ -6,7 +6,7 @@ const Prof = ({ member }) => {
   return (
     <div className="flex flex-col items-center w-[600px] ml-24">
       <div className="mt-[60px] mb-[30px] h-[480px]">
-        <div className="bg-secondary rounded-full relative w-[460px] h-[460px]">
+        <div className="bg-secondary rounded-full relative w-[140px] h-[140px] sm:w-[340px] sm:h-[340px] lg:w-[460px] lg:h-[460px]">
           <img
             src={`/img/materialImg/2/${member.imageName}Solo.png`}
             alt="prof"
