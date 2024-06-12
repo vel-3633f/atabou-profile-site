@@ -11,7 +11,7 @@ import titleLogo from "/img/materialImg/1/titleLogo.png";
 
 const First = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full xl:w-[85vw] 2xl:w-[95vw]">
       <img src={backImg} alt="backImg" />
       <img src={nail} alt="nail" className="absolute top-0" />
       <img src={thread} alt="thread" className="absolute top-0" />

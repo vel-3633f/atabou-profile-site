@@ -8,7 +8,6 @@ import "../styles/slider.css";
 import { Navigation } from "swiper/modules";
 
 export default function Slider({ images, id }) {
-  console.log(images);
   return (
     <div className="relative w-full mt-[50px]">
       <Swiper
