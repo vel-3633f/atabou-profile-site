@@ -1,11 +1,10 @@
-import { Styles } from "../consts/sentense";
 import Slider from "./Slider";
 
 const Prof = ({ member }) => {
   const memberImageStyle = member.imageName === "major" ? "top-0 left-24" : "";
   return (
-    <div className="flex flex-col items-center w-[600px] ml-24">
-      <div className="mt-[60px] mb-[30px] h-[480px]">
+    <div className="flex flex-col mx-auto items-center w-2/3 md:w-[550px] xl:w-[600px]">
+      <div className="mt-[60px] mb-[30px]">
         <div className="bg-secondary rounded-full relative w-[140px] h-[140px] sm:w-[340px] sm:h-[340px] lg:w-[460px] lg:h-[460px]">
           <img
             src={`/img/materialImg/2/${member.imageName}Solo.png`}

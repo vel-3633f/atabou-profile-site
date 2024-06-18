@@ -21,7 +21,9 @@ export default function Slider({ images, id }) {
       >
         {images.map((image, i) => (
           <SwiperSlide key={i}>
-            <img src={`/img/thumbnailImg/${image}.png`} alt={image} />
+            <div className="mx-auto">
+              <img src={`/img/thumbnailImg/${image}.png`} alt={image}  className="w-full"/>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
